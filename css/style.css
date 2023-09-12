@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #f26a8d;
+    display: flex;
+    border-style: solid;
+    justify-content: right;
+}
+
+nav a {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+footer {
+    background-color: #38cfe3;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    padding-top: 15px;
+    margin-top: 0px;
+}
+
+footer a {
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.img_splash {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.splash {
+    padding-top: 200px;   
+    background-color: #d4adcf;
+    border-style: solid;
+    border-top: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 75px;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.splash h1 {
+    margin-bottom: 10px;
+}
+
+.content {
+    background-color: #c1cad6;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    border-style: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.profile {
+    border-radius: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.content p {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr {
+    border-style: dotted;
+    border-bottom: 20px;
+    border-color: #ffffb5;
+    border-width: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.card {
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 50%;
+    background-color: #65696d;
+    transition: 0.3s;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    width: 390px;
+    height: 390px;
+}
+
+.card img {
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.three-col {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    position: relative;
+    top: -25px;
+}
+
+.card ul {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card ul li {
+    position: relative;
+    left: -15px;
+    top: -25px;
+}
+
+.card dl {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.leadership {
+    position: relative;
+    top: -45px;
+    font-size: 85%;
+    width: 92%;
+}
+
+.leadership dd {
+    margin-bottom: 12px;
+}
+
+.leadership a {
+    text-decoration: none;
+    color: #ffffb5;
+}
+
+.leadership a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.skills {
+    position: relative;
+    top: -57px;
+}
+
+.skills dd {
+    font-size: 50%;
+    position: relative;
+    left: -10px;
+    margin-bottom: 6px;
+}
+
+.skills dt {
+    font-size: 75%;
+}
+
+.bird_1 {
+    width: 150px;
+    position: absolute;
+    left: 40px;
+    top: 200px;
+}
+
+.bird_2 {
+    width: 150px;
+    position: absolute;
+    right: 40px;
+    top: 200px;
+    transform: scaleX(-1);
+}
+
+
+.address {
+    font-size: 25px;
+}
+
+.card_2 {
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 5%;
+    background-color: #65696d;
+    transition: 0.3s;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    width: 500px;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+}
+
+.one-col {
+    display: grid;
+    width: 500px;
+}
+
+.one-col label {
+    padding-top: 30px;
+}
+
+.one-col input {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.one-col textarea {
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+@media all and (max-width: 600px) {
+    .three-col {
+        grid-template-columns: 1fr;
+        margin-left: 40px;
+    }
+
+    .one-col {
+        width: 300px;
+    }
+
+    .card_2{
+        width: 300px;
+    }
+
+    .bird_1 {
+        top: 100px;
+        left: 10px;
+    }
+
+    .bird_2 {
+        top: 100px;
+        right: 10px;
+    }
+}
